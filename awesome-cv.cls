@@ -88,7 +88,8 @@
   pdfsubject={},
   pdfkeywords={}
 }
-
+% Needed to deal Chinese font
+\RequirePackage{ctex}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
@@ -152,8 +153,8 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+\def\@sectioncolor#1#2{%
+  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2}}{#1#2}%
 }
 
 
@@ -574,6 +575,18 @@
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+  \end{tabular*}%
+}
+
+% Define an entry of education information
+% 
+\newcommand*{\cveduentry}[5]{%
+  \vspace{-2.0mm}
+  %\setlength\tabcolsep{0pt}
+  %\setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{2cm} L{\textwidth-16cm} L{4cm} L{1.5cm} R{3cm} }
+    \entrydatestyle{#4} & \entrytitlestyle{#2} & \entrypositionstyle{#1} & \entrydatestyle{#5} & \entrylocationstyle{#3}  \\
+    %\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
 }
 
