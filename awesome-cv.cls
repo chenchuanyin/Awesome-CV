@@ -584,7 +584,7 @@
   \vspace{-2.0mm}
   %\setlength\tabcolsep{0pt}
   %\setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{2cm} L{\textwidth-16cm} L{4cm} L{1.5cm} R{3cm} }
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{2cm} L{\textwidth-14cm} L{4cm} L{1.5cm} R{3cm} }
     \entrydatestyle{#4} & \entrytitlestyle{#2} & \entrypositionstyle{#1} & \entrydatestyle{#5} & \entrylocationstyle{#3}  \\
     %\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
