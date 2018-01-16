@@ -6,9 +6,12 @@
    (TeX-run-style-hooks
     "latex2e"
     "cv/education"
+    "cv/work"
     "cv/skills"
     "cv/experience"
+    "cv/github"
     "cv/honors"
+    "cv/summary"
     "awesome-cv"
     "awesome-cv11"))
  :latex)

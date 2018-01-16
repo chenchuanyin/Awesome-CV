@@ -52,16 +52,20 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{陈传银}{Silver}
-\position{服务端开发工程师}%{\enskip\cdotp\enskip}
-\address{安徽芜湖}
-
-\mobile{187-8885-8336}
+\photo[circle,left]{./photo.jpg}
+\name{}{个人简历}
+\position{求职意向：C++/Go服务端研发工程师}%{\enskip\cdotp\enskip}
+\address{陈传银}
+\mapMark{安徽芜湖}
+\user{陈传银}
+\birthday{1989.04.15}
+\mobile{18788858336}
 \email{chenchuanyinuestc@gmail.com}
+\qq{1073137300}
 \homepage{chenchuanyin.github.io}
 \github{chenchuanyin}
-%\linkedin{posquit0}
+
+% \linkedin{posquit0}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -75,13 +79,13 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {}% {\today}
-  {个人简历}
+  {简历}% {\today}
+  {感谢您阅读我的个人简历}
   {\thepage}
 
 
@@ -90,11 +94,12 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{cv/education.tex}
+\input{cv/work.tex}
 \input{cv/skills.tex}
 \input{cv/experience.tex}
-%\input{cv/extracurricular.tex}
+\input{cv/github.tex}
 \input{cv/honors.tex}
-%\input{cv/presentation.tex}
+\input{cv/summary.tex}
 %\input{cv/writing.tex}
 %\input{cv/committees.tex}
 
